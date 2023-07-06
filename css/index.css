@@ -1,0 +1,346 @@
+* {
+    background-color:azure;
+    margin: 0;
+    font-family: Rubik,sans-serif;
+
+}
+
+html {
+    height: 300%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.header {
+
+    position: fixed;
+    display: flex;
+    padding: 1.5rem;
+    padding-right: 100px;
+    font-size: 20px;
+    justify-content: flex-end;
+    right: 0px;
+    left: 0px;
+   z-index: 999;
+   background-color: transparent;
+   backdrop-filter: blur(10px);
+   border-bottom: #0070f348 solid 3px;
+   box-shadow: 2px 5px 15px #0070f348;
+}
+
+.socialMedia img{
+    width: 45px;
+    margin: 0;
+}
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top:200px;
+    
+    
+}
+
+.header a{
+    text-decoration: none;
+    margin-left: 100px;
+    padding: 1rem;
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+    color: #0070f3;
+}
+.header a:hover{
+    border-left: #0070f3 solid 4px;
+    background-color: #0070f348;
+    transform: scale(1.1);
+    transition: .3s;
+}
+section{
+    display: flex;
+    padding-top: 100px;
+}
+
+img{
+    width: 500px;
+    margin: 50px;
+}
+
+.profile{
+    width: 100%;
+    padding: 100px 50px 50px 50px; /*Van en sentido del reloj, el primero es top, el segundo right, el tercero bottom y el cuaerto left*/
+    
+}
+.profile p{
+    color: #708eaf;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 20px;
+
+}
+.profile h2{
+    color: #0070f3;
+    font-size: 80px;
+}
+.profile h3{
+    color: #0070f3;
+    font-size: 48px;
+}
+
+.animation1{
+    position: absolute;
+    width: 283px;
+    height: 320px;
+    left: 75%;
+    top: 20%;
+    background:url(../img/imagenanimation1.png);
+    background-size: cover;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: #708eaf 0px 16.3881px 32.7761px;
+    backdrop-filter: blur(21.8507px);
+    border-radius: 16px;
+}
+
+.animation2{
+    position: absolute;
+    width: 385px;
+    height: 320px;
+    left: 62%;
+    top: 35%;
+    background:url(../img/imagenanimation2.png);
+    background-size: cover;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: #708eaf 0px 16.3881px 32.7761px;
+    backdrop-filter: blur(21.8507px);
+    border-radius: 16px;
+}
+
+.animation3{
+    position: absolute;
+    width: 283px;
+    height: 300px;
+    left: 55%;
+    top:15%;
+    background:url(../img/imagenanimation3.png);
+    background-size: cover;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: #708eaf 0px 16.3881px 32.7761px;
+
+    border-radius: 16px;
+}
+
+.animation4{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left: 45%;
+    top: 40%;
+    background:url(../img/imagenanimation4.png);
+    background-size: cover;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: #708eaf 0px 16.3881px 32.7761px;
+    backdrop-filter: blur(21.8507px);
+    border-radius: 16px;
+}
+
+.animation div {
+    transform: rotateY(-20deg) rotateX(20deg);
+    transform-origin: left bottom;
+    transition: transform 0.3s ease;
+}
+
+
+.animation:hover div{
+    transform: rotateY(0deg) rotateX(0deg);
+    transform-origin: left bottom;
+
+}
+.sectionExperience{
+    display: grid;
+    padding-top: 400px;
+    justify-items: center;
+   
+}
+.Title{
+
+    margin-bottom: 50px;
+    font-size: 50px;
+    color: #0070f3;
+    text-shadow: 5px 5px 5px #0070f348;
+}
+.contenidoExperience{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    border-left: #0070f3 solid 4px;
+    height: auto;
+    width: 45%;
+}
+.experience{
+    display: flex;
+    flex-direction: column; 
+    padding: 50px;
+}
+.experience button{
+    padding: 1rem;
+    margin: 5px;
+    border-right: #0070f348;
+    border-top: #0070f348;
+    border-bottom: #0070f348;
+    border-left: #0070f348 ;
+
+    
+}
+.experience button:hover{
+    cursor: pointer;
+    background-color: #0070f348;
+    transition: .3s;
+    border-right: #0070f348;
+    border-top: #0070f348;
+    border-bottom: #0070f348;
+    
+    
+}
+.textoExperience{
+    margin-left: 50px;
+    width: 100%;
+}
+
+.selected {
+    background-color: #0070f348;
+    border-left: #0070f3 solid 4px !important;
+  }
+
+.skillset{
+    display: grid;
+    justify-items: center;
+    padding: 0px 0px 0px;
+}
+.imagesSkillset{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.containerSkillset{
+    display: flex;
+}
+
+.containerSkillset img{
+    width: 200px;   
+}
+.containerSkillset img:hover{
+   transform: scale(1.2);
+   transition: .5s;
+}
+.containerTexts{
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+figure {
+    padding: 5px;
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+    border-radius: 10px;
+}
+
+figcaption p {
+    background-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+    visibility: visible;
+}
+
+figure:hover img {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.difficulty-bar {
+    height: 10px;
+    width: 100%;
+    background-color: lightgray;
+    border-radius: 5px;
+  }
+  
+  .bar-levelJS {
+    height: 100%;
+    background-color: blue;
+    border-radius: 5px;
+    width: 66%;
+  }
+  .bar-levelJava {
+    height: 100%;
+    background-color: blue;
+    border-radius: 5px;
+    width: 66%;
+  }
+  .bar-levelSQL {
+    height: 100%;
+    background-color: blue;
+    border-radius: 5px;
+    width: 75%;
+  }
+
+  .bar-levelPy {
+    height: 100%;
+    background-color: blue;
+    border-radius: 5px;
+    width: 33%;
+  }
+
+.language{
+
+    font-size: 50px;
+    color: white;
+    text-shadow: 7px 5px 5px #0070f348;
+}
+.level{
+    font-size: 25px;
+}
+
+
+
+
+footer{
+    position: fixed;
+    padding: 1rem;
+    bottom: 0;
+    left: 40%;
+    color: #708eaf;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
