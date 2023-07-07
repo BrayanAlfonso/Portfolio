@@ -39,11 +39,80 @@ let iconSql=document.getElementById("iconSql")
 let iconPython=document.getElementById("iconPython")
 
 
-let textJS=document.querySelector(".textJS")
+//Acceder a los difv donde iran los medidores de dificultad
+let JS=document.getElementById("JS")
+let Java=document.getElementById("Java")
+let SQL=document.getElementById("SQL")
+let py=document.getElementById("py")
+
+
 iconJS.addEventListener("mouseover", ()=>{
-    
+    JS.innerHTML=`
+    <div class="dificult">
+    <span>Intermedio</span>
+    <div class="difficulty-bar">
+        <div class="bar-levelJS"></div>
+        
+    </div>`
+
+    iconJS.addEventListener("mouseout",()=>{
+        JS.innerHTML=``
+    })
     
 })
 
 
+
+
+iconJava.addEventListener("mouseover", ()=>{
+    Java.innerHTML=`
+    <div class="dificult" class="medidor2">
+        <span>Intermedio</span>
+        <div class="difficulty-bar">
+            <div class="bar-levelJava"></div>
+            
+        </div>
+    </div>`
+
+
+    iconJava.addEventListener("mouseout",()=>{
+        Java.innerHTML=``
+    })
+    
+})
+
+
+iconSql.addEventListener("mouseover", ()=>{
+    SQL.innerHTML=`
+    <div class="dificult" class="medidor3">
+        <span>Intermedio</span>
+        <div class="difficulty-bar">
+            <div class="bar-levelSQL"></div>
+            
+        </div>
+    </div>`
+
+
+    iconSql.addEventListener("mouseout",()=>{
+        SQL.innerHTML=``
+    })
+    
+})
+
+iconPython.addEventListener("mouseover", ()=>{
+    py.innerHTML=`
+    <div class="dificult" class="medidor4">
+        <span>Básico</span>
+        <div class="difficulty-bar">
+            <div class="bar-levelPy"></div>
+            
+        </div>
+    </div>`
+
+
+    iconPython.addEventListener("mouseout",()=>{
+        py.innerHTML=``
+    })
+    
+})
 
