@@ -116,3 +116,48 @@ iconPython.addEventListener("mouseover", ()=>{
     
 })
 
+
+
+//Pruebas para desplazamientos en la pagina con ayuda de los botones
+
+
+//Llamar los botones (enlaces)
+let btnAbout=document.getElementById("btnAbout")
+let btnExperience=document.getElementById("btnExperience")
+let btnSkillSet=document.getElementById("btnSkillSet")
+let btnProjects=document.getElementById("btnProjects")
+let btnContact=document.getElementById("btnContact")
+
+//Llamar las secciones
+let sectionProfile=document.getElementById("sectionProfile")
+let sectionExperience=document.getElementById("sectionExperience")
+let sectionSkillset=document.getElementById("sectionSkillset")
+let sectionProjects=document.getElementById("sectionProjects")
+let sectionContact=document.getElementById("sectionContact")
+
+//Eventos para los scroll
+
+//Seccion perfil
+btnAbout.addEventListener("click", ()=>{
+    sectionProfile.scrollIntoView({behavior:'smooth'})
+})
+
+//Seccion experiencia
+btnExperience.addEventListener("click",()=>{
+    sectionExperience.scrollIntoView({behavior: 'smooth'})
+})
+
+//Seccion skillset
+btnSkillSet.addEventListener("click",()=>{
+    sectionSkillset.scrollIntoView({behavior: 'smooth'})
+})
+
+//Seccion proyectos
+btnProjects.addEventListener("click", ()=>{
+    sectionProjects.scrollIntoView({behavior: 'smooth'})
+})
+
+//Seccion contacto
+btnContact.addEventListener("click", ()=>{
+    sectionContact.scrollIntoView({behavior:'smooth'})
+})

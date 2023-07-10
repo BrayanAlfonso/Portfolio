@@ -9,15 +9,19 @@
     <style data-href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&amp;display=swap"></style>
 </head>
 <body>
-    <div>
+    <div class="body">
             <nav class="header">
-                    <a href="">About</a>
+                    <a id="btnAbout">About</a>
                 
-                    <a href="">Experience</a>
+                    <a id="btnExperience">Experience</a>
+
+                    <a id="btnSkillSet">Skill Set</a>
             
-                    <a href="">Projects</a>
+                    <a id="btnProjects">Projects</a>
                 
-                    <a href="">Contact</a>
+                    <a id="btnContact">Contact</a>
+
+                    
             </nav>
 
             <!-- <div class="socialMedia">
@@ -25,7 +29,7 @@
                 <img src="img/whatsapp.png" alt="whatsapp">
             </div> -->
 
-            <section>
+            <section id="sectionProfile">
                 <div class="profile">
                     <p>Hello world, my name is</p>
                     <h2> Brayan Alfonso</h2>
@@ -47,7 +51,7 @@
             </section>
 
             
-            <section class="sectionExperience">
+            <section class="sectionExperience" id="sectionExperience">
                 <h1 class="Title">Experience</h1>
             <div class="contenidoExperience">
                 <div class="experience">
@@ -60,7 +64,7 @@
             </div>
             </section>
 
-            <section class="secitonCenter">
+            <section class="secitonCenter" id="sectionSkillset">
                 <h1 class="Title">Skillset</h1>
                 <div class="containerSkillset">
                     <div class="relative">
@@ -98,7 +102,7 @@
 
             </section>
 
-            <section class="secitonCenter">
+            <section class="secitonCenter" id="sectionProjects">
 
                 <h1 class="Title">Projects</h1>
                     <div class="projects">
@@ -138,9 +142,53 @@
                     </div>
 
             </section>
+
+            <section class="secitonCenter" id="sectionContact">
+                
+                <form action="">
+                    <h1>Contact me!</h1>
+                    <div id="divEmail">
+                        <label for="email">Email:</label> <br>
+                        <div class="input">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="email"name="email" id="email"> 
+                        </div>
+                        
+                    </div>
+
+                    <div id="divName">
+                        <label for="name">Nombre:</label><br> 
+                        <div class="input">
+                            <i class="fa-regular fa-user"></i>
+                            <input type="text" name="name" id="name">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="comments">Comentarios:</label> <br>
+                        <div class="input">
+                            <i class="fa-regular fa-comment"></i>
+                            <input type="text" name="comments" id="comments">
+                        </div>
+                    </div>
+
+                    <div>
+                        
+                        <button type="submit" name="submit" id="submit">Enviar</button>
+                    </div>
+
+                </form>
+            </section>
     </div>   
 
-    <footer>Todos los derechos reservados a Brayan Alfonso &copy;</footer>  
+    <footer>
+        <div>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+        Todos los derechos reservados a Brayan Alfonso &copy;
+    </footer>  
    
 
 <script type="text/JavaScript" src="js/index.js"></script>
