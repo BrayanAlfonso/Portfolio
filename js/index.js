@@ -37,6 +37,8 @@ let iconJS=document.getElementById("iconJS")
 let iconJava=document.getElementById("iconJava")
 let iconSql=document.getElementById("iconSql")
 let iconPython=document.getElementById("iconPython")
+let iconHtml=document.getElementById("iconHtml")
+let iconCss=document.getElementById("iconCss")
 
 
 //Acceder a los difv donde iran los medidores de dificultad
@@ -44,14 +46,18 @@ let JS=document.getElementById("JS")
 let Java=document.getElementById("Java")
 let SQL=document.getElementById("SQL")
 let py=document.getElementById("py")
+let html=document.getElementById("html")
+let css=document.getElementById("css")
+
+console.log(iconHtml)
 
 
 iconJS.addEventListener("mouseover", ()=>{
     JS.innerHTML=`
-    <div class="dificult">
-    <span>Intermedio</span>
-    <div class="difficulty-bar">
-        <div class="bar-levelJS"></div>
+    <div class="dificult" >
+    <span>Intermediate</span>
+    <div class="difficulty-bar" >
+        <div class="bar-levelIntermediate" ></div>
         
     </div>`
 
@@ -66,10 +72,10 @@ iconJS.addEventListener("mouseover", ()=>{
 
 iconJava.addEventListener("mouseover", ()=>{
     Java.innerHTML=`
-    <div class="dificult" class="medidor2">
-        <span>Intermedio</span>
+    <div class="dificult" ">
+        <span>Intermediate</span>
         <div class="difficulty-bar">
-            <div class="bar-levelJava"></div>
+            <div class="bar-levelIntermediate"></div>
             
         </div>
     </div>`
@@ -84,10 +90,10 @@ iconJava.addEventListener("mouseover", ()=>{
 
 iconSql.addEventListener("mouseover", ()=>{
     SQL.innerHTML=`
-    <div class="dificult" class="medidor3">
-        <span>Intermedio</span>
+    <div class="dificult" >
+        <span>High midium</span>
         <div class="difficulty-bar">
-            <div class="bar-levelSQL"></div>
+            <div class="bar-levelHighIntermediate"></div>
             
         </div>
     </div>`
@@ -101,10 +107,10 @@ iconSql.addEventListener("mouseover", ()=>{
 
 iconPython.addEventListener("mouseover", ()=>{
     py.innerHTML=`
-    <div class="dificult" class="medidor4">
-        <span>Básico</span>
+    <div class="dificult" >
+        <span>Basic</span>
         <div class="difficulty-bar">
-            <div class="bar-levelPy"></div>
+            <div class="bar-levelLow"></div>
             
         </div>
     </div>`
@@ -114,6 +120,33 @@ iconPython.addEventListener("mouseover", ()=>{
         py.innerHTML=``
     })
     
+})
+
+iconHtml.addEventListener("mouseover", ()=>{
+    html.innerHTML=`
+    <div class="dificult" >
+        <span>Avanzado</span>
+            <div class="difficulty-bar">
+                <div class="bar-levelAdvanced"></div>
+            </div>
+    </div>`
+    iconHtml.addEventListener("mouseout",()=>{
+        html.innerHTML=``
+    })
+})
+
+iconCss.addEventListener("mouseover", ()=>{
+    css.innerHTML=`
+    <div class="dificult" >
+        <span>High midium</span>
+            <div class="difficulty-bar">
+                <div class="bar-levelHighIntermediate"></div>
+            </div>
+    </div>`
+
+    iconCss.addEventListener("mouseout", ()=>{
+        css.innerHTML=``
+    })
 })
 
 

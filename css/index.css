@@ -75,9 +75,9 @@ section {
     justify-content: center;
 }
 
-img {
+.relative img {
     width: 500px;
-    margin: 50px;
+    margin: 70px;
 }
 
 .profile {
@@ -253,6 +253,7 @@ img {
 .containerSkillset {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 
@@ -275,6 +276,10 @@ img {
 
 .imgproject {
     position: relative;
+
+}
+.imgproject img{
+    margin: 50px;
 }
 
 .superposition {
@@ -311,33 +316,33 @@ img {
     border-radius: 5px;
 }
 
-.bar-levelJS {
-    height: 100%;
-    background-color: yellow;
-    border-radius: 5px;
-    width: 66%;
-}
-
-.bar-levelJava {
-    height: 100%;
-    background-color: yellow;
-    border-radius: 5px;
-    width: 66%;
-}
-
-.bar-levelSQL {
-    height: 100%;
-    background-color: yellow;
-    border-radius: 5px;
-    width: 75%;
-}
-
-.bar-levelPy {
+.bar-levelLow{
     height: 100%;
     background-color: red;
     border-radius: 5px;
     width: 33%;
 }
+
+.bar-levelIntermediate{
+    height: 100%;
+    background-color: yellow;
+    border-radius: 5px;
+    width: 66%;
+}
+.bar-levelHighIntermediate{
+    height: 100%;
+    background-color: yellow;
+    border-radius: 5px;
+    width: 75%;
+
+}
+.bar-levelAdvanced{
+    height: 100%;
+    background-color: greenyellow;
+    border-radius: 5px;
+    width: 100%;
+}
+
 
 .language {
     font-size: 50px;
@@ -382,7 +387,7 @@ a {
     background-color: #0070f3;
     width: 200px;
     height: 75px;
-    margin-left: 50px;
+    margin-left: 70px;
     text-align: center;
     padding: 15px;
     color: white;
@@ -404,7 +409,7 @@ a {
     
 }
 
-#JS, #Java, #SQL, #py{
+.containerIcon{
     position: absolute;
     z-index: 1;
 }
