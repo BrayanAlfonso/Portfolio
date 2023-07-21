@@ -194,3 +194,21 @@ btnProjects.addEventListener("click", ()=>{
 btnContact.addEventListener("click", ()=>{
     sectionContact.scrollIntoView({behavior:'smooth'})
 })
+
+
+
+
+//Eventos para la ventana modal
+let modal = document.getElementById("modal");
+let contenidoModal=document.querySelector(".modal-contenido")
+
+
+btnContinue.addEventListener("click", () => {
+  
+    modal.style.top='100%'
+  setTimeout(()=>{
+    
+    modal.style.display = "none";
+  }, 500)
+
+});

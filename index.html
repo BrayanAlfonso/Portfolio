@@ -163,33 +163,42 @@
                 <form action="">
                     <h1>Contact me!</h1>
                     <div id="divEmail">
-                        <label for="email">Email:</label> <br>
-                        <div class="input">
+                        <div>
                             <i class="fa-regular fa-envelope"></i>
-                            <input type="email"name="email" id="email"> 
+                            <label for="email">Email:</label> <br>
+                        </div>
+                        <div >
+                            
+                            <input type="email"name="email" id="email" class="input"> 
                         </div>
                         
                     </div>
 
                     <div id="divName">
-                        <label for="name">Nombre:</label><br> 
-                        <div class="input">
-                            <i class="fa-regular fa-user"></i>
-                            <input type="text" name="name" id="name">
+                        <div>
+                            <i class="fa-regular fa-user"></i>  
+                            <label for="name"> Name:</label><br>  
+                        </div>
+                        <div >
+                            
+                            <input type="text" name="name" id="name" class="input">
                         </div>
                     </div>
 
                     <div>
-                        <label for="comments">Comentarios:</label> <br>
-                        <div class="input">
+                        <div>
                             <i class="fa-regular fa-comment"></i>
-                            <input type="text" name="comments" id="comments">
+                            <label for="comments">Comments:</label> <br>
+                        </div>
+                        <div >
+                            
+                            <input type="text" name="comments" id="comments" class="inputComments">
                         </div>
                     </div>
 
-                    <div>
+                    <div class="button" >
                         
-                        <button type="submit" name="submit" id="submit">Enviar</button>
+                        <button type="submit" name="submit" id="submit" class="btn">Enviar</button>
                     </div>
 
                 </form>
@@ -202,9 +211,24 @@
             <a href=""><i class="fa-solid fa-envelope"></i></a>
             <a href=""><i class="fa-brands fa-github"></i></a>
         </div>
-        Todos los derechos reservados a Brayan Alfonso &copy;
+        All rights reserved to Brayan Alfonso &copy; 2023
     </footer>  
-   
+
+
+    <div class="modal" id="modal">
+        <div class="modal-contenido">
+        <div>
+            <h1 class="headerModal">This is my modal window</h1>
+            <img src="img/FotoPrueba.jpg" alt="">
+        </div>
+        <div class="flex">
+            <p>Welcome to my portfolio, I'm a software developer, thank you for interest in my job, below you can see my portfolio</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde, id alias rerum omnis nemo voluptatum! Sapiente vel ratione iste quam, perferendis est minima dolore error repellat adipisci aliquam ea?</p>
+        </div>
+          <button id="btnContinue">Continuar</button>
+
+        </div>
+      </div>
 
 <script type="text/JavaScript" src="js/index.js"></script>
 </body>

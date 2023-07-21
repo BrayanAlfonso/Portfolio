@@ -282,6 +282,10 @@ section {
     margin: 50px;
 }
 
+#sectionProjects{
+    margin-bottom: 100px;
+}
+
 .superposition {
     position: absolute;
     top: 275px;
@@ -435,59 +439,128 @@ a {
     
   }
 
-  #sectionContact {
-    width: auto;
+
+
+#sectionContact {
+    margin: 0;
     padding: 100px;
-    height: auto;
-    margin: 0px;
+    background-color: rgb(0, 112, 243);
+
 }
 
 
 
 
 #sectionContact h1{
-    color: #fff;
     font-size: 50px;
+    margin-bottom: 20px;
 
 }
 
 form{
-    background-color: #0070f3;
+    width: 150%;
+    background-color: azure;
     padding: 20px;
     border-radius: 10px;
+    color: #0070f3;
+    text-align: center;
 }
 form div{
-    margin: 20px;
-    text-align: center;
-    color: #fff;
+    margin-bottom: 20px;
+    text-align: left;
+}
 
+.button{
+    text-align: center;
+}
+#submit{
+    margin: 0;
 }
 #comments{
     height: 100px;
 }
 
-input{
+
+.input{
+    text-decoration: none;
     border: none;
+    background-color: transparent;
+    border-bottom: #0070f3 solid 1px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100%;
+    height: 30px;
+    border-color: #0070f3;
     border-radius: 10px;
-    height: 35px;
+} 
+
+.input:hover{
+    border: #0070f3 solid 1px;
+    border-radius: 10px;
+    transform: scale(1.05);
+    transition: .5s;
 }
-.input {
-    border: #708eaf solid 1px;
-    background-color: #708eaf;
+.inputComments{
+    border: #0070f3 solid 1px;
+    background-color: transparent;
     border-radius: 10px;
-    padding: 5px;
+    width: 100%;
+}
+
+.inputComments:hover{
+
+    transform: scale(1.05);
+    transition: .5s;
 }
 
 form i{
-    border: #708eaf solid 1px;
-    background-color: #708eaf;
+    margin-right: 10px;
+    background-color: transparent;
 }
-#submit{
-    background-color: #708eaf;
-    padding: 10px 20px 10px 20px;
-    color: #fff;
-    border: none;
+
+.modal {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+    transition: 0.5s;
+  }
+  
+  .modal-contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    background-color: blue;
+    padding: 20px;
+    border-radius: 5px;
+    
+    
+  }
+  
+
+.modal img{
+    width: 300px;
+    margin-left: 50%;
+    transform: translate(-50%);
+   
 }
+.headerModal{
+    display: flex;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+}
+
 
 
 footer {
