@@ -1,3 +1,20 @@
+
+//Recargar la pagina cuando se le da al icono
+
+
+let logo = document.querySelector(".logo");
+
+logo.addEventListener("click", () => {
+
+document.body.classList.add("fade-out");
+setTimeout(() => {
+    window.location.reload();
+}, 500); 
+});
+
+
+
+
 //Animaciones y textos para los campos de experiencia
 let btnExperience1=document.querySelector(".experience1");
 let btnExperience2=document.querySelector(".experience2")
@@ -6,7 +23,7 @@ let textoExperience=document.querySelector(".textoExperience")
 
 btnExperience1.addEventListener("click", (e)=>{
     e.preventDefault()
-    textoExperience.textContent ='Esta es una prueba para el texto de interlineComunicaciones'
+    textoExperience.textContent ='Trabaje durante unos años en atencion al cliente en un local de barrio llamado Interline Comunicaciones, mismo para el cual hice mi proyecto de grado.'
     btnExperience1.setAttribute("class","selected")
     btnExperience2.classList.remove("selected")
     btnExperience3.classList.remove("selected")
@@ -15,7 +32,7 @@ btnExperience1.addEventListener("click", (e)=>{
 btnExperience2.addEventListener("click", (e)=>{
 
     e.preventDefault();
-    textoExperience.textContent='Esta es una prueba para el texto del segundo campo para experiencia'
+    textoExperience.textContent='Estoy a punto de participar en la competencia de programacion Sena Soft a nivel nacional'
     btnExperience2.setAttribute("class","selected")
     btnExperience1.classList.remove("selected")
     btnExperience3.classList.remove("selected")
@@ -23,7 +40,7 @@ btnExperience2.addEventListener("click", (e)=>{
 
 btnExperience3.addEventListener("click", (e)=>{
     e.preventDefault();
-    textoExperience.textContent='Esta es la ultima prueba para el campo de experiencia'
+    textoExperience.textContent='Ademas, mis practicas las hice en la empresa Teleperformance en el cargo de ------ (en el futuro)'
     btnExperience3.setAttribute("class","selected")
     btnExperience1.classList.remove("selected")
     btnExperience2.classList.remove("selected")
@@ -168,31 +185,51 @@ let sectionSkillset=document.getElementById("sectionSkillset")
 let sectionProjects=document.getElementById("sectionProjects")
 let sectionContact=document.getElementById("sectionContact")
 
-//Eventos para los scroll
+//Eventos para los scroll y estilos
+
+
+function removeSelectedClassFromButtons() {
+    btnAbout.classList.remove("selected");
+    btnExperience.classList.remove("selected");
+    btnSkillSet.classList.remove("selected");
+    btnProjects.classList.remove("selected");
+    btnContact.classList.remove("selected");
+}
+
 
 //Seccion perfil
 btnAbout.addEventListener("click", ()=>{
     sectionProfile.scrollIntoView({behavior:'smooth'})
+    removeSelectedClassFromButtons()
+    btnAbout.classList.add("selected");
 })
 
 //Seccion experiencia
 btnExperience.addEventListener("click",()=>{
     sectionExperience.scrollIntoView({behavior: 'smooth'})
+    removeSelectedClassFromButtons()
+    btnExperience.classList.add("selected")
 })
 
 //Seccion skillset
 btnSkillSet.addEventListener("click",()=>{
     sectionSkillset.scrollIntoView({behavior: 'smooth'})
+    removeSelectedClassFromButtons()
+    btnSkillSet.classList.add("selected")
 })
 
 //Seccion proyectos
 btnProjects.addEventListener("click", ()=>{
     sectionProjects.scrollIntoView({behavior: 'smooth'})
+    removeSelectedClassFromButtons()
+    btnProjects.classList.add("selected")
 })
 
 //Seccion contacto
 btnContact.addEventListener("click", ()=>{
     sectionContact.scrollIntoView({behavior:'smooth'})
+    removeSelectedClassFromButtons()
+    btnContact.classList.add("selected")
 })
 
 
@@ -202,13 +239,34 @@ btnContact.addEventListener("click", ()=>{
 let modal = document.getElementById("modal");
 let contenidoModal=document.querySelector(".modal-contenido")
 
+//Funcion para abrir la ventana modal
+function openModal() {
+    modal.style.display = "block";
+    document.body.classList.add("modal-open");
+}
 
+function scrollToTop() {
+    window.scrollTo({ top: 0});
+}
+
+//Evento para abrir la ventana al cargarse la pagina
+openModal();
+
+
+//Evento para cerrar la ventana modal
 btnContinue.addEventListener("click", () => {
-  
+
     modal.style.top='100%'
-  setTimeout(()=>{
+    document.body.classList.remove("modal-open");
+
+    scrollToTop();
+    setTimeout(()=>{
     
     modal.style.display = "none";
-  }, 500)
+}, 500)
 
 });
+
+
+
+

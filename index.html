@@ -9,21 +9,28 @@
     <style data-href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&amp;display=swap"></style>
 </head>
 <body>
-    <div class="body">
-            <nav class="header">
-                    <a id="btnAbout">About</a>
-                
-                    <a id="btnExperience">Experience</a>
+    <div id="cuerpo">
+        <header class="header">
+            <div class="name">
+                <img src="img/logo.png" alt="Logo" class="logo">
+            </div>
 
-                    <a id="btnSkillSet">Skill Set</a>
-            
-                    <a id="btnProjects">Projects</a>
-                
-                    <a id="btnContact">Contact</a>
-
+            <div class="links">
+                <nav class="toolbar">
+                        <a id="btnAbout">About</a>
                     
-            </nav>
+                        <a id="btnExperience">Experience</a>
 
+                        <a id="btnSkillSet">Skill Set</a>
+                
+                        <a id="btnProjects">Projects</a>
+                    
+                        <a id="btnContact">Contact</a>
+                    
+                </nav>
+            </div>
+        </header>
+            
             <!-- <div class="socialMedia">
                 <img src="img/linkedIn.png" alt="LinkedIn">
                 <img src="img/whatsapp.png" alt="whatsapp">
@@ -31,15 +38,13 @@
 
             <section id="sectionProfile">
                 <div class="profile">
-                    <p>Hello world, my name is</p>
+                    <p>Hello everybody, my name is</p>
                     <h2> Brayan Alfonso</h2>
                     <h3>Full-stack developer junior</h3>
-                    <p>I'm a full-stack developer Junior, at the moment i'am studying <br>
-                        software analysis and development in SENA and soon I will be <br>
-                        in productive stage.</p>
+
                         <a href="pdf/Hoja de vida Brayan Alfonso Actualizada.pdf" download>
                             <button class="btn">Descargar Hoja de Vida</button>
-                          </a>
+                        </a>
                 </div>
                 <div class="animation">
                     <div class="animation1"></div>
@@ -56,11 +61,11 @@
             <div class="contenidoExperience">
                 <div class="experience">
                     <button class="experience1">Interline Comunicaciones</button>
-                    <button class="experience2">Otra</button>
-                    <button class="experience3">Otra mas</button>
+                    <button class="experience2">Sena Soft</button>
+                    <button class="experience3">Teleperformance</button>
                 </div>
 
-                    <p class="textoExperience"> Esta es una prueba para el texto de interlineComunicaciones</p>
+                    <p class="textoExperience">Trabaje durante unos años en atencion al cliente en un local de barrio llamado Interline Comunicaciones, mismo para el cual hice mi proyecto de grado.</p>
             </div>
             </section>
 
@@ -111,7 +116,7 @@
                         </div>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" id="iconCss"/>
                     </div>
-
+                    
 
 
 
@@ -157,59 +162,59 @@
                     </div>
 
             </section>
-
-            <section class="secitonCenter" id="sectionContact">
-                
-                <form action="">
-                    <h1>Contact me!</h1>
-                    <div id="divEmail">
-                        <div>
-                            <i class="fa-regular fa-envelope"></i>
-                            <label for="email">Email:</label> <br>
-                        </div>
-                        <div >
-                            
-                            <input type="email"name="email" id="email" class="input"> 
-                        </div>
-                        
-                    </div>
-
-                    <div id="divName">
-                        <div>
-                            <i class="fa-regular fa-user"></i>  
-                            <label for="name"> Name:</label><br>  
-                        </div>
-                        <div >
-                            
-                            <input type="text" name="name" id="name" class="input">
-                        </div>
-                    </div>
-
-                    <div>
-                        <div>
-                            <i class="fa-regular fa-comment"></i>
-                            <label for="comments">Comments:</label> <br>
-                        </div>
-                        <div >
-                            
-                            <input type="text" name="comments" id="comments" class="inputComments">
-                        </div>
-                    </div>
-
-                    <div class="button" >
-                        
-                        <button type="submit" name="submit" id="submit" class="btn">Enviar</button>
-                    </div>
-
-                </form>
-            </section>
     </div>   
+
+    <section class="secitonCenter" id="sectionContact">
+                
+        <form action="https://formspree.io/f/xoqovyjv" method="POST">
+            <h1>Contact me!</h1>
+            <div id="divEmail">
+                <div>
+                    <i class="fa-regular fa-envelope"></i>
+                    <label for="email">Email:</label> <br>
+                </div>
+                <div >
+                    
+                    <input type="email"name="email" id="email" class="input"> 
+                </div>
+                
+            </div>
+
+            <div id="divName">
+                <div>
+                    <i class="fa-regular fa-user"></i>  
+                    <label for="name"> Name:</label><br>  
+                </div>
+                <div >
+                    
+                    <input type="text" name="name" id="name" class="input">
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <i class="fa-regular fa-comment"></i>
+                    <label for="comments">Comments:</label> <br>
+                </div>
+                <div >
+                    
+                    <input type="text" name="comments" id="comments" class="inputComments">
+                </div>
+            </div>
+
+            <div class="button" >
+                
+                <button type="submit" name="submit" id="submit" class="btn">Enviar</button>
+            </div>
+
+        </form>
+    </section>
 
     <footer>
         <div>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-solid fa-envelope"></i></a>
-            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/brayan-alfonso-a14071274"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:brayanpaloma19b@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/BrayanAlfonso?tab=repositories"><i class="fa-brands fa-github"></i></a>
         </div>
         All rights reserved to Brayan Alfonso &copy; 2023
     </footer>  
@@ -218,17 +223,20 @@
     <div class="modal" id="modal">
         <div class="modal-contenido">
         <div>
-            <h1 class="headerModal">This is my modal window</h1>
-            <img src="img/FotoPrueba.jpg" alt="">
+            <h1 class="headerModal">Hi there! I'm Brayan Alfonso.</h1>
+            
         </div>
         <div class="flex">
-            <p>Welcome to my portfolio, I'm a software developer, thank you for interest in my job, below you can see my portfolio</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde, id alias rerum omnis nemo voluptatum! Sapiente vel ratione iste quam, perferendis est minima dolore error repellat adipisci aliquam ea?</p>
+            <img src="img/FotoPrueba.jpg" alt="" class="profile-img">
+            <p class="profileModal">Hello! Welcome to my portfolio, I'm a software junior developer, I wanna be a full-stack developer and I've created this page
+                to can show the job that I've developed during these years, that although little I've felt proud of it.
+                I'm a person whit ability and mood to constantly learn and adapt me to has been to circumstances.
+                Student of SENA in the program technologist in software analysis and develop, candidate to study software engginer.</p>
         </div>
-          <button id="btnContinue">Continuar</button>
+        <button id="btnContinue" class="btn">Continue</button>
 
         </div>
-      </div>
+    </div>
 
 <script type="text/JavaScript" src="js/index.js"></script>
 </body>
